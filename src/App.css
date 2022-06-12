@@ -120,15 +120,21 @@ header h1 {
 }
 
 .portfolio-link,
-.about-link {
+.about-link,
+.main-link {
   font-family: "Red Hat Mono", monospace;
   font-size: 25px;
   text-decoration: none;
   position: relative;
-  color: #333;
+  color: #000;
 }
 
-.homeNav a::after {
+.main-link {
+  margin-right: 20px;
+}
+
+.homeNav a::after,
+.main-link.active::after {
   content: "";
   height: 15px;
   display: block;
@@ -137,11 +143,13 @@ header h1 {
   z-index: -1;
 }
 
-.portfolio-link::after {
+.portfolio-link::after,
+.main-portfolio.active::after {
   width: 140px;
   background-color: #c9ff2f;
 }
-.about-link::after {
+.about-link::after,
+.main-about.active::after {
   width: 124px;
   background-color: #ffe500;
 }
@@ -199,6 +207,11 @@ header {
   padding: 30px 0;
 }
 
+header .logoTitle,
+header nav {
+  width: 50%;
+}
+
 header .container-fluid {
   display: flex;
   flex: 1;
@@ -227,5 +240,5 @@ header .container-fluid {
   margin-right: 12px;
 }
 
-@media (max-width: 1024) {
+@media (min-width: 1024) {
 }

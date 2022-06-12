@@ -10,8 +10,12 @@ function Header() {
           <h1>Hi, I’m Prathap Ravishankar</h1>
         </div>
         <nav>
-          <NavLink to="#">Portfolio</NavLink>
-          <NavLink to="#">About</NavLink>
+          <NavLink className="main-link main-portfolio" to="/portfolio">
+            Portfolio
+          </NavLink>
+          <NavLink className="main-link main-about" to="/about">
+            About
+          </NavLink>
         </nav>
       </div>
     </header>
