@@ -13,14 +13,14 @@ function WelcomePage() {
         <h1 className="main-title">Coming Soon</h1>
         <nav className="socialmenu">
           <a
-            href="https://www.linkedin.com/in/eunicedhivya/"
+            href="https://www.linkedin.com/in/prathap-ravishankar-3203834"
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a
+          {/* <a
             href="https://github.com/eunicedhivya/"
             target="_blank"
             rel="noopener noreferrer"
@@ -33,11 +33,11 @@ function WelcomePage() {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faCodepen} />
-          </a>
+          </a> */}
         </nav>
       </main>
 
-      <footer>© 2021 Eunice Dhivya</footer>
+      <footer>© 2022 Prathap Ravishankar</footer>
     </div>
   );
 }
