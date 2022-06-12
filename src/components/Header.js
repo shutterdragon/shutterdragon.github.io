@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ninja from "../img/Ninja.png";
 
 function Header() {
@@ -6,8 +6,10 @@ function Header() {
     <header>
       <div className="container-fluid">
         <div className="logoTitle">
-          <img src={ninja} alt="ninja" />
-          <h1>Hi, I’m Prathap Ravishankar</h1>
+          <Link to="/">
+            <img src={ninja} alt="ninja" />
+            <h1>Hi, I’m Prathap Ravishankar</h1>
+          </Link>
         </div>
         <nav>
           <NavLink className="main-link main-portfolio" to="/portfolio">
