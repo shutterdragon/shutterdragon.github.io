@@ -14,7 +14,7 @@ function Header() {
             Portfolio
           </NavLink>
           <NavLink className="main-link main-about" to="/about">
-            About
+            About me
           </NavLink>
         </nav>
       </div>

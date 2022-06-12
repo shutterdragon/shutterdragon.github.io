@@ -134,11 +134,13 @@ header h1 {
 }
 
 .homeNav a::after,
-.main-link.active::after {
+.main-portfolio.active::after,
+.main-about.active::after {
   content: "";
   height: 15px;
   display: block;
   top: 17px;
+  left: 0;
   position: absolute;
   z-index: -1;
 }
@@ -205,11 +207,14 @@ header h1 {
 
 header {
   padding: 30px 0;
+  margin-bottom: 30px;
 }
 
-header .logoTitle,
-header nav {
+header .logoTitle {
   width: 50%;
+}
+header nav {
+  width: fit-content;
 }
 
 header .container-fluid {
@@ -238,6 +243,22 @@ header .container-fluid {
   width: 20px;
   height: 20px;
   margin-right: 12px;
+}
+
+.about-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: fit-content;
+  display: flex;
+  align-content: flex-end;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+.about-content img {
+  width: 40px;
 }
 
 @media (min-width: 1024) {
