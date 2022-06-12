@@ -80,6 +80,11 @@ header nav {
   max-width: 1000px;
   margin: 0 auto;
 }
+.container-fluid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .intro {
   text-align: center;
@@ -89,11 +94,13 @@ header nav {
   transform: translate(-50%, -50%);
 }
 
-.intro h1 {
+.intro h1,
+header h1 {
   font-family: "Red Hat Mono", monospace;
   font-size: 28px;
   line-height: 38px;
   font-weight: 400;
+  margin: 0 0 20px 0;
 }
 .intro p {
   font-family: "Red Hat Mono", monospace;
@@ -101,7 +108,7 @@ header nav {
   line-height: 22px;
   color: #a9a4a4;
   font-weight: 400;
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
 }
 
 .intro img {
@@ -109,7 +116,7 @@ header nav {
   margin: 0 auto;
   width: 100%;
   max-width: 100px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto;
 }
 
 .portfolio-link,
@@ -131,11 +138,11 @@ header nav {
 }
 
 .portfolio-link::after {
-  width: 141px;
+  width: 140px;
   background-color: #c9ff2f;
 }
 .about-link::after {
-  width: 130px;
+  width: 124px;
   background-color: #ffe500;
 }
 
@@ -143,4 +150,82 @@ header nav {
   display: flex;
   justify-content: center;
   column-gap: 60px;
+}
+
+.portfolioItem {
+  display: flex;
+  column-gap: 20px;
+  margin: 0 0 50px 0;
+  border-top: 1px solid #ccc;
+  padding: 10px 0 0 0;
+}
+.portfolioItem:first-child {
+  border-top: none;
+}
+
+.titlePic {
+  width: 25%;
+}
+.publicationName {
+  width: 10%;
+  font-weight: 400;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 16px;
+  line-height: 21px;
+}
+.description {
+  width: 50%;
+  font-weight: 400;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.titlePic h2 {
+  font-family: "Red Hat Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 0 0 20px 0;
+  line-height: 18px;
+}
+
+.titlePic img {
+  width: 100%;
+  max-width: 215px;
+}
+
+header {
+  padding: 30px 0;
+}
+
+header .container-fluid {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoTitle {
+  display: flex;
+  column-gap: 20px;
+}
+
+.logoTitle img {
+  width: 30px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+@media (max-width: 1024) {
 }
