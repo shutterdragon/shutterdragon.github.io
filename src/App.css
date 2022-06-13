@@ -174,7 +174,7 @@ header h1 {
 }
 
 .titlePic {
-  width: 25%;
+  width: 100%;
 }
 .publicationName {
   width: 10%;
@@ -235,10 +235,13 @@ header .container-fluid {
   column-gap: 20px;
   text-decoration: none;
   color: #000;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .logoTitle img {
   width: 30px;
+  align-self: start;
 }
 
 .star {
@@ -263,7 +266,15 @@ header .container-fluid {
   width: 40px;
 }
 
+.titleWStar {
+  display: flex;
+  column-gap: 20px;
+}
+
 @media (max-width: 767px) {
+  header .logoTitle {
+    width: 100%;
+  }
   nav.homeNav {
     flex-direction: column;
   }
@@ -281,12 +292,9 @@ header .container-fluid {
   }
   .portfolioItem {
     flex-direction: column;
+    margin: 0 0 25px 0;
   }
 
-  .titleWStar {
-    display: flex;
-    column-gap: 20px;
-  }
   .titlePic {
     width: 100%;
   }
@@ -294,5 +302,11 @@ header .container-fluid {
   .description {
     margin-left: 50px;
     width: 80%;
+  }
+  .about-content {
+    width: 90%;
+  }
+  .about-content img {
+    display: none;
   }
 }
