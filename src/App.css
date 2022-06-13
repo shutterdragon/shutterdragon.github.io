@@ -263,5 +263,14 @@ header .container-fluid {
   width: 40px;
 }
 
-@media (min-width: 1024) {
+@media (max-width: 767px) {
+  nav.homeNav {
+    flex-direction: column;
+  }
+  a.portfolio-link::after {
+    left: 35px;
+  }
+  a.about-link::after {
+    left: 35px;
+  }
 }
