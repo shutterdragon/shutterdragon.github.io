@@ -273,4 +273,26 @@ header .container-fluid {
   a.about-link::after {
     left: 35px;
   }
+  header .container-fluid {
+    flex-direction: column;
+  }
+  .page {
+    margin: 0 20px;
+  }
+  .portfolioItem {
+    flex-direction: column;
+  }
+
+  .titleWStar {
+    display: flex;
+    column-gap: 20px;
+  }
+  .titlePic {
+    width: 100%;
+  }
+  .publicationName,
+  .description {
+    margin-left: 50px;
+    width: 80%;
+  }
 }
