@@ -4,20 +4,24 @@
     "title": "Mars Perseverance Mission",
     "publication": "The Federal",
     "description": "Description text content goes here.",
-    "link": "#"
+    "url": "mars-perseverance-mission",
+    "interactive-link": "#",
+    "other-link": "#"
   },
   {
     "id": 2,
     "title": "Lok Sabha 2019",
     "publication": "The Federal",
     "description": "Description text content goes here.",
-    "link": "#"
+    "url": "lok-sabha-2019",
+    "interactive-link": "#"
   },
   {
     "id": 3,
     "title": "US Presidential Elections",
     "publication": "The Federal",
     "description": "Description text content goes here.",
-    "link": "#"
+    "url": "us-presidential-elections",
+    "other-link": "#"
   }
 ]
