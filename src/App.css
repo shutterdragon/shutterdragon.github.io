@@ -191,6 +191,11 @@ header h1 {
   line-height: 21px;
 }
 
+.portfolio-container a {
+  text-decoration: none;
+  color: #000;
+}
+
 .titlePic h2 {
   font-family: "Red Hat Mono", monospace;
   font-size: 16px;
@@ -198,6 +203,7 @@ header h1 {
   line-height: 21px;
   margin: 0 0 20px 0;
   line-height: 18px;
+  text-decoration: none;
 }
 
 .titlePic img {

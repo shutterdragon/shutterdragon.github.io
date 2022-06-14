@@ -18,13 +18,13 @@ function Portfolio() {
         console.log("data", data);
         setPortfolioList(data);
       });
-    // .then(() => history.push("/mentors"));
   }
 
   useEffect(() => {
     getPortfolioList();
     return () => {};
   }, []);
+
   return (
     <div className="page">
       <Header />

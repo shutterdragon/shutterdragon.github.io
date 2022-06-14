@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
+import PortfolioDetail from "./pages/PortfolioDetail";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/portfolio" exact>
           <Portfolio />
+        </Route>
+        <Route path="/:portfoliotitle" exact>
+          <PortfolioDetail />
         </Route>
       </Switch>
     </div>
