@@ -5,6 +5,7 @@
     "publication": "The Federal",
     "description": "Description text content goes here.",
     "url": "mars-perseverance-mission",
+    "category": "UI/UX",
     "interactive-link": "#",
     "other-link": "#"
   },
@@ -14,7 +15,9 @@
     "publication": "The Federal",
     "description": "Description text content goes here.",
     "url": "lok-sabha-2019",
-    "interactive-link": "#"
+    "category": "UI/UX",
+    "interactive-link": "#",
+    "other-link": "#"
   },
   {
     "id": 3,
@@ -22,6 +25,8 @@
     "publication": "The Federal",
     "description": "Description text content goes here.",
     "url": "us-presidential-elections",
+    "category": "UI/UX",
+    "interactive-link": "#",
     "other-link": "#"
   }
 ]
