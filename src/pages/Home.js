@@ -7,10 +7,14 @@ function Home() {
   return (
     <div className="container">
       <div className="intro">
-        <h1>Hi, I’m Prathap Ravishankar</h1>
-        <p>. UI/UX Designer . Illustrator . Writer .</p>
+        <h1 className="animate__animated animate__fadeInUp">
+          Hi, I’m Prathap Ravishankar
+        </h1>
+        <p className="animate__animated animate__fadeInUp">
+          . UI/UX Designer . Illustrator . Writer .
+        </p>
         <img src={ninja} alt="ninja" />
-        <nav className="homeNav">
+        <nav className="homeNav animate__animated animate__fadeInDown">
           <Link className="portfolio-link" to="/portfolio">
             Portfolio
           </Link>

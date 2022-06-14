@@ -5,13 +5,13 @@ function Header() {
   return (
     <header>
       <div className="container-fluid">
-        <div className="logoTitle">
+        <div className="logoTitle animate__animated animate__fadeInDown">
           <Link to="/">
             <img src={ninja} alt="ninja" />
             <h1>Hi, I’m Prathap Ravishankar</h1>
           </Link>
         </div>
-        <nav>
+        <nav className="animate__animated animate__fadeInDown">
           <NavLink className="main-link main-portfolio" to="/portfolio">
             Portfolio
           </NavLink>

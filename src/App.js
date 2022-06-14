@@ -1,4 +1,5 @@
 import WelcomePage from "./pages/WelcomePage";
+import "animate.css";
 import "./App.css";
 import Header from "./components/Header";
 import { Switch, Route } from "react-router-dom";
@@ -23,7 +24,7 @@ function App() {
         <Route path="/portfolio" exact>
           <Portfolio />
         </Route>
-        <Route path="/:portfoliotitle" exact>
+        <Route path="/portfolio/:portfoliotitle" exact>
           <PortfolioDetail />
         </Route>
       </Switch>

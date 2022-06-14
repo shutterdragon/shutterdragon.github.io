@@ -143,6 +143,7 @@ header h1 {
   left: 0;
   position: absolute;
   z-index: -1;
+  transition: all 0.5s;
 }
 
 .portfolio-link::after,
@@ -277,6 +278,45 @@ header .container-fluid {
   column-gap: 20px;
 }
 
+.portfolio-details {
+  display: flex;
+  column-gap: 2%;
+}
+
+.portfolio-details .leadimg {
+  width: 40%;
+}
+.portfolio-details h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 0 0 20px 0;
+}
+.portfolio-details .portfolio-txt {
+  width: 58%;
+  position: relative;
+}
+.portfolio-details .portfolio-links {
+  position: absolute;
+  bottom: 0;
+}
+.portfolio-details .portfolio-links a {
+  margin-right: 20px;
+  color: #000;
+}
+
+.goBack {
+  font-family: "Red Hat Mono", monospace;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.goBack::before {
+  content: "\2190";
+}
+
 @media (max-width: 767px) {
   header .logoTitle {
     width: 100%;
@@ -314,5 +354,12 @@ header .container-fluid {
   }
   .about-content img {
     display: none;
+  }
+  .portfolio-details {
+    flex-direction: column;
+  }
+  .portfolio-details .leadimg,
+  .portfolio-details .portfolio-txt {
+    width: 100%;
   }
 }

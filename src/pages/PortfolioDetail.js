@@ -1,11 +1,18 @@
 import Header from "./../components/Header";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useHistory } from "react-router-dom";
 import ninja from "../img/Ninja.png";
 import { useEffect, useState } from "react";
 
 function PortfolioDetail() {
+  const history = useHistory();
   const { portfoliotitle } = useParams();
-  const [details, setDetails] = useState([]);
+  const [details, setDetails] = useState({});
+
+  const { title, publication, description } = details;
+
+  function formatTitle(str) {
+    return str.replace("-", " ");
+  }
 
   async function getSelPortDetail() {
     fetch("../data.json", {
@@ -16,12 +23,12 @@ function PortfolioDetail() {
     })
       .then((data) => data.json())
       .then((data) => {
-        console.log("data", portfoliotitle.replace(/\s+/g, " ").toLowerCase());
-        // const fd = data.filter(function (obj) {
-        //   return obj.title === portfoliotitle;
-        // });
-        // console.log(fd);
-        // setPortfolioList(data);
+        // console.log("data", formatTitle(portfoliotitle));
+        const fd = data.filter(function (obj) {
+          return obj.url === portfoliotitle;
+        });
+        console.log(fd[0]);
+        setDetails(fd[0]);
       });
   }
 
@@ -33,7 +40,22 @@ function PortfolioDetail() {
   return (
     <div className="page">
       <Header />
-      <div className="portfolio-details">Details of {portfoliotitle}</div>
+      <div className="container">
+        <button className="goBack" onClick={() => history.push("/portfolio")}>
+          Go Back
+        </button>
+        <div className="portfolio-details animate__animated animate__fadeInUp">
+          <img className="leadimg" src="../img/thumbnail.jpeg" alt={title} />
+          <div className="portfolio-txt">
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <div className="portfolio-links">
+              <Link to="#">Interactive</Link>
+              <Link to="#">Other</Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

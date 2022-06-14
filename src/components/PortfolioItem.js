@@ -3,8 +3,8 @@ import Star from "../img/Star.png";
 
 function PortfolioItem({ item }) {
   return (
-    <Link to={"/" + item.title.replace(/\s+/g, "-").toLowerCase()}>
-      <div className="portfolioItem">
+    <Link to={"/portfolio/" + item.url}>
+      <div className="portfolioItem animate__animated animate__fadeIn">
         <div className="titleWStar">
           <img className="star" src={Star} alt="" />
           <div className="titlePic">
