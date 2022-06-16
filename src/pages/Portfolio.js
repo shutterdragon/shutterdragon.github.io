@@ -29,9 +29,9 @@ function Portfolio() {
     <div className="page">
       <Header />
       <div className="portfolio-container">
-        {portfolioList.map(function (item) {
+        {portfolioList.map(function (item, i) {
           console.log(item);
-          return <PortfolioItem key={item.id} item={item} />;
+          return <PortfolioItem key={item.id} item={item} index={i} />;
         })}
       </div>
     </div>

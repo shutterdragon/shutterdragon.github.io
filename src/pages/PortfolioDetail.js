@@ -44,7 +44,7 @@ function PortfolioDetail() {
         <button className="goBack" onClick={() => history.push("/portfolio")}>
           Go Back
         </button>
-        <div className="portfolio-details animate__animated animate__fadeInUp">
+        <div className="portfolio-details animate__animated animate__fadeIn">
           <img className="leadimg" src="../img/thumbnail.jpeg" alt={title} />
           <div className="portfolio-txt">
             <h2>{title}</h2>

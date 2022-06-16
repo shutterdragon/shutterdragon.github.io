@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import Star from "../img/Star.png";
 
-function PortfolioItem({ item }) {
+function PortfolioItem({ item, index }) {
   return (
     <Link to={"/portfolio/" + item.url}>
-      <div className="portfolioItem animate__animated animate__fadeIn">
+      <div
+        className="portfolioItem animate__animated animate__fadeIn"
+        style={{ animationDelay: `${index}s` }}
+      >
         <div className="titleWStar">
           <img className="star" src={Star} alt="" />
           <div className="titlePic">

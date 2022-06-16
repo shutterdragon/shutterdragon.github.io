@@ -5,17 +5,20 @@ function Header() {
   return (
     <header>
       <div className="container-fluid">
-        <div className="logoTitle animate__animated animate__fadeInDown">
+        <div className="logoTitle animate__animated animate__fadeIn">
           <Link to="/">
             <img src={ninja} alt="ninja" />
-            <h1>Hi, I’m Prathap Ravishankar</h1>
+            <h1>
+              Hi, I’m <br />
+              Prathap Ravishankar
+            </h1>
           </Link>
         </div>
-        <nav className="animate__animated animate__fadeInDown">
-          <NavLink className="main-link main-portfolio" to="/portfolio">
+        <nav className="mainNav animate__animated animate__fadeIn">
+          <NavLink className="portfolio-link" to="/portfolio">
             Portfolio
           </NavLink>
-          <NavLink className="main-link main-about" to="/about">
+          <NavLink className="about-link" to="/about">
             About me
           </NavLink>
         </nav>

@@ -7,7 +7,7 @@ function About() {
     <div className="page">
       <Header />
       <div className="about-content">
-        <img src={ninja} alt="ninja" style={{ alignSelf: "center" }} />
+        <img src={ninja} alt="ninja" style={{ alignSelf: "flex-end" }} />
         <div className="text-content">
           <p>
             Detailed intro of the project and the text goes here. Detailed intro
@@ -19,7 +19,9 @@ function About() {
             and the text goes here. Detailed intro of the project and the text
             goes here.
           </p>
-          <Link to="#">Download Resume</Link>
+          <Link className="download-link" to="#">
+            Download Resume
+          </Link>
         </div>
       </div>
     </div>

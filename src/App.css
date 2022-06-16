@@ -115,18 +115,31 @@ header h1 {
   display: block;
   margin: 0 auto;
   width: 100%;
-  max-width: 100px;
+  max-width: 80px;
   margin: 0 auto 60px auto;
 }
 
 .portfolio-link,
-.about-link,
-.main-link {
+.about-link {
   font-family: "Red Hat Mono", monospace;
-  font-size: 25px;
+  font-size: 18px;
   text-decoration: none;
   position: relative;
+  color: #a9a4a4;
+  transition: all 0.5s;
+}
+
+.portfolio-link:hover,
+.about-link:hover,
+.portfolio-link.active,
+.about-link.active {
   color: #000;
+}
+
+.mainNav {
+  column-gap: 50px;
+  display: flex;
+  margin-top: 45px;
 }
 
 .main-link {
@@ -134,12 +147,12 @@ header h1 {
 }
 
 .homeNav a::after,
-.main-portfolio.active::after,
-.main-about.active::after {
+.mainNav a::after,
+.mainNav a.active::after {
   content: "";
-  height: 15px;
+  height: 10px;
   display: block;
-  top: 17px;
+  top: 12px;
   left: 0;
   position: absolute;
   z-index: -1;
@@ -147,20 +160,27 @@ header h1 {
 }
 
 .portfolio-link::after,
-.main-portfolio.active::after {
-  width: 140px;
-  background-color: #c9ff2f;
+.about-link::after {
+  width: 0;
 }
-.about-link::after,
-.main-about.active::after {
-  width: 124px;
+
+.portfolio-link:hover::after,
+a.portfolio-link.active::after {
+  width: 102px;
+  background-color: #c9ff2f;
+  transition: all 0.5s;
+}
+.about-link:hover::after,
+a.about-link.active::after {
+  width: 90px;
   background-color: #ffe500;
+  transition: all 0.5s;
 }
 
 .homeNav {
   display: flex;
   justify-content: center;
-  column-gap: 60px;
+  column-gap: 90px;
 }
 
 .portfolioItem {
@@ -268,12 +288,15 @@ header .container-fluid {
   column-gap: 20px;
   width: 100%;
   max-width: 700px;
+  font-family: "Red Hat Mono", monospace;
 }
 .about-content img {
-  width: 40px;
+  width: 25px;
+  margin-bottom: 41px;
 }
 
 .titleWStar {
+  width: 35%;
   display: flex;
   column-gap: 20px;
 }
@@ -295,6 +318,7 @@ header .container-fluid {
 .portfolio-details .portfolio-txt {
   width: 58%;
   position: relative;
+  font-family: "Red Hat Mono", monospace;
 }
 .portfolio-details .portfolio-links {
   position: absolute;
@@ -303,6 +327,11 @@ header .container-fluid {
 .portfolio-details .portfolio-links a {
   margin-right: 20px;
   color: #000;
+  font-size: 16px;
+}
+
+.publicationName {
+  color: #979494;
 }
 
 .goBack {
@@ -315,6 +344,10 @@ header .container-fluid {
 }
 .goBack::before {
   content: "\2190";
+}
+
+.download-link {
+  color: #000;
 }
 
 @media (max-width: 767px) {
@@ -361,5 +394,14 @@ header .container-fluid {
   .portfolio-details .leadimg,
   .portfolio-details .portfolio-txt {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .container-fluid {
+    width: 90%;
+  }
+  .portfolio-container {
+    width: 89%;
   }
 }
