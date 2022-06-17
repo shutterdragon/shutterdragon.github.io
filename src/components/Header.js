@@ -8,10 +8,9 @@ function Header() {
         <div className="logoTitle animate__animated animate__fadeIn">
           <Link to="/">
             <img src={ninja} alt="ninja" />
-            <h1>
-              Hi, I’m <br />
-              Prathap Ravishankar
-            </h1>
+          </Link>
+          <Link to="/">
+            <h1>Hi, I’m Prathap Ravishankar</h1>
           </Link>
         </div>
         <nav className="mainNav animate__animated animate__fadeIn">

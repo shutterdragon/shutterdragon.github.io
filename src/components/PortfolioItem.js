@@ -6,7 +6,7 @@ function PortfolioItem({ item, index }) {
     <Link to={"/portfolio/" + item.url}>
       <div
         className="portfolioItem animate__animated animate__fadeIn"
-        style={{ animationDelay: `${index}s` }}
+        style={{ animationDelay: `${index / 2}s` }}
       >
         <div className="titleWStar">
           <img className="star" src={Star} alt="" />
