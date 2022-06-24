@@ -10,7 +10,7 @@ function Portfolio() {
   // All Portfolio Records Held here
   const [portfolioList, setPortfolioList] = useState([]);
   const [filtered, setFiltered] = useState([]);
-  const [activeCat, setActiveCat] = useState("UI/UX");
+  const [activeCat, setActiveCat] = useState("Interactives");
 
   // const categoryData = portfolioList.map((value) => {
   //   return value.filter;
@@ -31,8 +31,11 @@ function Portfolio() {
     getPortfolioList();
   }, []);
 
+  // const url = "../data.json";
+  const url = "https://shutterdragon.github.io/portfolio/portfolio.json";
+
   async function getPortfolioList() {
-    fetch("https://shutterdragon.github.io/portfolio/portfolio.json", {
+    fetch(url, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

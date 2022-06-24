@@ -8,14 +8,19 @@ function PortfolioDetail() {
   const { portfoliotitle } = useParams();
   const [details, setDetails] = useState({});
 
-  const { title, publication, description } = details;
+  const { title, publication, description, url, interactivelink } = details;
+
+  console.log(interactivelink);
 
   function formatTitle(str) {
     return str.replace("-", " ");
   }
 
   async function getSelPortDetail() {
-    fetch("../data.json", {
+    // const url = "../data.json";
+    const url = "https://shutterdragon.github.io/portfolio/portfolio.json";
+
+    fetch(url, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -45,13 +50,19 @@ function PortfolioDetail() {
           Go Back
         </button>
         <div className="portfolio-details animate__animated animate__fadeIn">
-          <img className="leadimg" src="../img/thumbnail.jpeg" alt={title} />
+          <img
+            className="leadimg"
+            src={"img/thumbnails/" + url + ".jpg"}
+            alt={title}
+          />
           <div className="portfolio-txt">
             <h2>{title}</h2>
             <p>{description}</p>
             <div className="portfolio-links">
-              <Link to="#">Interactive</Link>
-              <Link to="#">Other</Link>
+              <a href={interactivelink} target="_blank">
+                Interactive
+              </a>
+              <a href="#">Other</a>
             </div>
           </div>
         </div>

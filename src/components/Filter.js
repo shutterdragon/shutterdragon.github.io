@@ -22,10 +22,10 @@ function Filter({ portfolioList, setFiltered, activeCat, setActiveCat }) {
         All
       </button> */}
       <button
-        className={activeCat === "UI/UX" ? "filters active" : "filters"}
-        onClick={() => setActiveCat("UI/UX")}
+        className={activeCat === "Interactives" ? "filters active" : "filters"}
+        onClick={() => setActiveCat("Interactives")}
       >
-        UI/UX
+        Interactives
       </button>
       <button
         className={activeCat === "Illustration" ? "filters active" : "filters"}

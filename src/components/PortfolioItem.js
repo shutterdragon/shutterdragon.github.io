@@ -12,7 +12,10 @@ function PortfolioItem({ item, index }) {
           <img className="star" src={Star} alt="" />
           <div className="titlePic">
             <h2>{item.title}</h2>
-            <img src="../img/thumbnail.jpeg" alt="Mars Mission" />
+            <img
+              src={"img/thumbnails/" + item.url + ".jpg"}
+              alt="Mars Mission"
+            />
           </div>
         </div>
         <div className="publicationName">{item.publication}</div>

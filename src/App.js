@@ -2,7 +2,7 @@ import WelcomePage from "./pages/WelcomePage";
 import "animate.css";
 import "./App.css";
 import Header from "./components/Header";
-import { Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -16,7 +16,7 @@ function App() {
       {/* <Header /> */}
 
       {/* <WelcomePage /> */}
-      <Switch>
+      <HashRouter>
         <Route path="/" exact>
           <Home />
         </Route>
@@ -32,10 +32,7 @@ function App() {
         <Route path="/portfolio/:portfoliotitle" exact>
           <PortfolioDetail />
         </Route>
-        <Route path="**">
-          <NotFound />
-        </Route>
-      </Switch>
+      </HashRouter>
     </div>
   );
 }
