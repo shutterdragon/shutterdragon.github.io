@@ -14,7 +14,7 @@ function Filter({ portfolioList, setFiltered, activeCat, setActiveCat }) {
     setFiltered(filtered);
   }, [activeCat]);
   return (
-    <div className="portfolio-container filter-container">
+    <div className="filter-container">
       {/* <button
         className={activeCat === "all" ? "filters active" : "filters"}
         onClick={() => setActiveCat("all")}

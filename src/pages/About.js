@@ -7,9 +7,6 @@ function About() {
     <div className="page">
       <Header />
       <div className="filter-container">
-        <NavLink className="about-link" to="/about">
-          About me
-        </NavLink>
         <NavLink className="contact-link" to="/contact">
           Contact me
         </NavLink>

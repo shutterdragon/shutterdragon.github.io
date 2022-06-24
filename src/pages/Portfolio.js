@@ -32,7 +32,7 @@ function Portfolio() {
   }, []);
 
   async function getPortfolioList() {
-    fetch("../data.json", {
+    fetch("https://shutterdragon.github.io/portfolio/portfolio.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

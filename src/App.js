@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import PortfolioDetail from "./pages/PortfolioDetail";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path="/portfolio/:portfoliotitle" exact>
           <PortfolioDetail />
+        </Route>
+        <Route path="**">
+          <NotFound />
         </Route>
       </Switch>
     </div>
