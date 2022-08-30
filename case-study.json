@@ -1,0 +1,227 @@
+[
+    {
+        "_id": "1001",
+        "title": "The Federal Native App",
+        "description": "Digital News Media",
+        "leadimg": "case-studies/thefederal/leadimg.jpg",
+        "url": "the-federal-native-app",
+        "content": [
+            {
+                "_id": "1001",
+                "para": "Digital wireframes",
+                "img": "case-studies/thefederal/digital-1.jpg"
+            },
+            {
+                "_id": "1002",
+                "para": "Digital wireframes",
+                "img": "case-studies/thefederal/digital-3.jpg"
+            },
+            {
+                "_id": "1003",
+                "para": "Digital wireframes",
+                "img": "case-studies/thefederal/digital-4.jpg"
+            },
+            {
+                "_id": "1004",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/thefederal/hi-fi-1.jpg"
+            },
+            {
+                "_id": "1005",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/thefederal/hi-fi-2.jpg"
+            },
+            {
+                "_id": "1006",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/thefederal/hi-fi-3.jpg"
+            }
+        ],
+        "figmaurl": "https://www.figma.com/proto/hG1r4ZE9xeaqvtlYcFWT3m/test?page-id=33%3A39&node-id=33%3A40&starting-point-node-id=33%3A40"
+    },
+    {
+        "_id": "1002",
+        "title": "Meraki Bakery App",
+        "description": "This is a bakery product delivery App for the shop called Meraki. They specialise in healthy dessert options.",
+        "leadimg": "case-studies/meraki/leadimg.jpg",
+        "url": "meraki-bakery-app",
+        "content": [
+            {
+                "_id": "1001",
+                "para": "Paper wireframes",
+                "img": "case-studies/meraki/paper1.PNG"
+            },
+            {
+                "_id": "1002",
+                "para": "Digital wireframes",
+                "img": "case-studies/meraki/digital-1.PNG"
+            },
+            {
+                "_id": "1003",
+                "para": "Digital wireframes",
+                "img": "case-studies/meraki/digital-2.PNG"
+            },
+            {
+                "_id": "1004",
+                "para": "Digital wireframes",
+                "img": "case-studies/meraki/wireframe-flow.PNG"
+            },
+            {
+                "_id": "1005",
+                "para": "Mockup",
+                "img": "case-studies/meraki/mockup.PNG"
+            },
+            {
+                "_id": "1006",
+                "para": "Mockup",
+                "img": "case-studies/meraki/mockup2.PNG"
+            },
+            {
+                "_id": "1007",
+                "para": "Mockup",
+                "img": "case-studies/meraki/mockup3.PNG"
+            },
+            {
+                "_id": "1008",
+                "para": "Mockup",
+                "img": "case-studies/meraki/mockup4.PNG"
+            },
+            {
+                "_id": "1008",
+                "para": "Hi-Fidelity Flow",
+                "img": "case-studies/meraki/hi-fi-flow.PNG"
+            }
+        ],
+        "figmaurl": "https://www.figma.com/proto/hG1r4ZE9xeaqvtlYcFWT3m/test?page-id=33%3A39&node-id=33%3A40&starting-point-node-id=33%3A40"
+    },
+    {
+        "_id": "1003",
+        "title": "SPI mobile and web ticketing portal",
+        "description": "Redesigned web and mobile application for booking tickets for SPI cinemas",
+        "leadimg": "case-studies/spi/leadimg.jpg",
+        "url": "spi-web-mobile-ticketing-portal",
+        "content": [
+            {
+                "_id": "1000",
+                "para": "Sitemap",
+                "img": "case-studies/spi/sitemap.png"
+            },
+            {
+                "_id": "1001",
+                "para": "Paper wireframes - Desktop",
+                "img": "case-studies/spi/paper1.jpg"
+            },
+            {
+                "_id": "1002",
+                "para": "Paper wireframes - Desktop",
+                "img": "case-studies/spi/paper2.jpg"
+            },
+            {
+                "_id": "1003",
+                "para": "Paper wireframes - Mobile",
+                "img": "case-studies/spi/paper3.jpg"
+            },
+            {
+                "_id": "1005",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-1.png"
+            },
+            {
+                "_id": "1006",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-2.png"
+            },
+            {
+                "_id": "1007",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-3.png"
+            },
+            {
+                "_id": "1008",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-desktop.png"
+            },
+            {
+                "_id": "1009",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-mobile-2.png"
+            },
+            {
+                "_id": "1010",
+                "para": "Desktop site flow",
+                "img": "case-studies/spi/flow-desktop.png"
+            },
+            {
+                "_id": "1011",
+                "para": "Mobile site flow",
+                "img": "case-studies/spi/flow-mobile.png"
+            }
+        ],
+        "figmaurl": "https://www.figma.com/proto/hG1r4ZE9xeaqvtlYcFWT3m/test?page-id=33%3A39&node-id=33%3A40&starting-point-node-id=33%3A40"
+    },
+    {
+        "_id": "1004",
+        "title": "Money Exchange App",
+        "description": "Money exchange app",
+        "leadimg": "case-studies/moneyapp/leadimg.jpg",
+        "url": "spi-web-mobile-tiket-booking-app",
+        "content": [
+            {
+                "_id": "1000",
+                "para": "Sitemap",
+                "img": "case-studies/spi/sitemap.png"
+            },
+            {
+                "_id": "1001",
+                "para": "Paper wireframes - Desktop",
+                "img": "case-studies/spi/paper1.jpg"
+            },
+            {
+                "_id": "1002",
+                "para": "Paper wireframes - Desktop",
+                "img": "case-studies/spi/paper2.jpg"
+            },
+            {
+                "_id": "1003",
+                "para": "Paper wireframes - Mobile",
+                "img": "case-studies/spi/paper3.jpg"
+            },
+            {
+                "_id": "1005",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-1.png"
+            },
+            {
+                "_id": "1006",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-2.png"
+            },
+            {
+                "_id": "1007",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-3.png"
+            },
+            {
+                "_id": "1008",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-desktop.png"
+            },
+            {
+                "_id": "1009",
+                "para": "Hi-Fidelity Wireframes",
+                "img": "case-studies/spi/digital-mobile-2.png"
+            },
+            {
+                "_id": "1010",
+                "para": "Desktop site flow",
+                "img": "case-studies/spi/flow-desktop.png"
+            },
+            {
+                "_id": "1011",
+                "para": "Mobile site flow",
+                "img": "case-studies/spi/flow-mobile.png"
+            }
+        ],
+        "figmaurl": "https://www.figma.com/proto/hG1r4ZE9xeaqvtlYcFWT3m/test?page-id=33%3A39&node-id=33%3A40&starting-point-node-id=33%3A40"
+    }
+]
